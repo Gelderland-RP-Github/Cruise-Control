@@ -6,7 +6,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         if (IsPedInAnyVehicle(GetPlayerPed(-1), false)) then
-        if IsControlJustPressed(0, 252) then
+        if IsControlJustPressed(0, 243) then
             if cruise == false then
                 cruise = true
 
