@@ -13,7 +13,7 @@ Citizen.CreateThread(function()
                 local currentSpeed = (GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false)))
                 SetVehicleMaxSpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false), currentSpeed)
                   
-                exports['okokTextUI']:Open('[Cruise Control] Geactiveerd op ' .. math.floor(currentSpeed*km) .. " km/h", 'lightgrey', 'left')
+                exports['okokTextUI']:Open('[Cruise Control] Geactiveerd op ' .. math.floor(currentSpeed*km) .. " km/h", 'darkgrey', 'left')
 
                 Citizen.Wait(3000)
 
@@ -23,7 +23,7 @@ Citizen.CreateThread(function()
                 cruise = false
                 SetVehicleMaxSpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false), 0.0)
 
-                exports['okokTextUI']:Open('[Cruise Control] Gedeactiveerd', 'lightred', 'left')
+                exports['okokTextUI']:Open('[Cruise Control] Gedeactiveerd', 'darkred', 'left')
 
                 Citizen.Wait(3000)
 
