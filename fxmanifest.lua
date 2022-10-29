@@ -3,6 +3,6 @@ game 'gta5'
 
 author 'Agent-Kwabbel - GelderlandRP'
 description 'Een cruise control systeem voor FiveM'
-version '1.0.0'
+version '1.0.2'
 
 client_script 'client.lua'
